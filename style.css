@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responcividade*/
+
+
+
+body {
+    min-height: 100px;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+  /* Cabeçalho */  
+
+header {
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header > h1{
+    color: white;
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 9.5em;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+ header a:hover {
+    text-decoration: underline;
+ }
+
+ header > p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1em;
+    padding-bottom: 50px;
+}
+
+  /*Conteudo */
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    font-size: 3em;
+    padding-left: 35px;
+}
+
+ section > p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.2em;
+    text-indent: 5px;
+}
+
+#img01 {
+    background-image: url('imagens/background001.jpg');
+
+    background-size: cover;
+
+    background-position: right center;
+
+    background-attachment: fixed;
+}
+
+section.imagem {
+box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.543);
+}
+
+section.imagem > p {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.p {
+    display: block;
+}
+
+footer {
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer > p {
+    color: white;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+/* Responsividade */
+
+
+@media screen and (max-width:1200px) {
+    header > h1 {
+        font-size: 5.6em;
+    }
+    
+    .p {
+        font-size: 30px;
+    }
+
+    section.imagem > p {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width:868px) {
+    header > h1 {
+        font-size: 4em;
+    }
+
+    .p {
+        font-size: 28px;
+    }
+    
+    section.imagem > p {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:668px) {
+    header > h1 {
+        font-size: 3em;
+    }
+
+    .p {
+        font-size: 15px;
+    }
+
+    section.imagem > p {
+        width: 200px;
+    }
+
+}
+
